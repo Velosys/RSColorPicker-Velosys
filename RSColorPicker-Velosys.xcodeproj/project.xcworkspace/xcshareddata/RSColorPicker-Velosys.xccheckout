@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FFA47EC9-0A8C-4F9C-8620-C21D87322C15</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RSColorPicker-Velosys</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BE75700E-0D59-4D76-BEB8-4A74F60EAF24</key>
+		<string>https://github.com/Velosys/RSColorPicker-Velosys</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RSColorPicker-Velosys.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BE75700E-0D59-4D76-BEB8-4A74F60EAF24</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Velosys/RSColorPicker-Velosys</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BE75700E-0D59-4D76-BEB8-4A74F60EAF24</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BE75700E-0D59-4D76-BEB8-4A74F60EAF24</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RSColorPicker-Velosys</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -214,9 +214,9 @@
 
 - (void)setSelectionColor:(UIColor *)selectionColor {
 	// Force color into correct colorspace to get HSV from
-    float components[4];
-    RSGetComponentsForColor(components, selectionColor);
-    selectionColor = [UIColor colorWithRed:components[0] green:components[1] blue:components[2] alpha:components[3]];
+//    float components[4];
+//    RSGetComponentsForColor(components, selectionColor);
+//    selectionColor = [UIColor colorWithRed:components[0] green:components[1] blue:components[2] alpha:components[3]];
   
     // convert to HSV
     CGFloat h, s, v, o;
