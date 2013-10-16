@@ -182,6 +182,10 @@
 #pragma mark - Setters
 
 - (void)setBrightness:(CGFloat)bright {
+    if ([self.delegate respondsToSelector:@selector(colorPicker:willChangeSelectionFromCurrentColor:)])
+    {
+        [self.delegate colorPicker:self willChangeSelectionFromCurrentColor:self.selectionColor];
+    }
 	_brightness = bright;
 
 	_gradientView.alpha = _brightness;
@@ -189,6 +193,10 @@
 }
 
 - (void)setOpacity:(CGFloat)opacity {
+    if ([self.delegate respondsToSelector:@selector(colorPicker:willChangeSelectionFromCurrentColor:)])
+    {
+        [self.delegate colorPicker:self willChangeSelectionFromCurrentColor:self.selectionColor];
+    }
 	_opacity = opacity;
 
 	_opacityView.alpha = 1 - _opacity;
