@@ -338,7 +338,13 @@
         _loupeLayer = [BGRSLoupeLayer layer];
     }
     [_loupeLayer appearInColorPicker:self];
-	
+
+    // Delegate notification for undo support
+    if ([self.delegate respondsToSelector:@selector(colorPicker:willChangeSelectionFromCurrentColor:)])
+    {
+        [self.delegate colorPicker:self willChangeSelectionFromCurrentColor:self.selectionColor];
+    }
+
 	CGPoint point = [[touches anyObject] locationInView:self];
 	[self updateSelectionAtPoint:point];
 }
@@ -356,6 +362,11 @@
 	}
 	_colorPickerViewFlags.badTouch = NO;
 	[_loupeLayer disappear];
+
+    if( [self.delegate respondsToSelector:@selector(colorPickerDidFinalizeSelection:)] )
+    {
+        [self.delegate colorPickerDidFinalizeSelection:self];
+    }
 }
 
 -(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {

@@ -15,6 +15,10 @@
 
 @protocol RSColorPickerViewDelegate <NSObject>
 -(void)colorPickerDidChangeSelection:(RSColorPickerView*)cp;
+
+@optional
+-(void)colorPicker:(RSColorPickerView *)cp willChangeSelectionFromCurrentColor:(UIColor *)color; // fires just before the user begins picking a different color, sending the current color before a new selection.
+-(void)colorPickerDidFinalizeSelection:(RSColorPickerView*)cp; // Fires when the user's finger lifts off.
 @end
 
 @interface RSColorPickerView : UIView
