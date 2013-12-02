@@ -27,7 +27,7 @@ CGContextRef RSBitmapContextCreateDefault(CGSize size){
 														  8,            //size_t bitsPerComponent
 														  bytesPerRow,  //size_t bytesPerRow
 														  colorSpace,   //CGColorSpaceRef space
-														  kCGImageAlphaPremultipliedFirst );//CGBitmapInfo bitmapInfo
+														  (CGBitmapInfo)kCGImageAlphaPremultipliedFirst );//CGBitmapInfo bitmapInfo
 	CGColorSpaceRelease(colorSpace);
 	return ctx;
 }
