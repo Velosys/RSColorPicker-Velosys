@@ -1,11 +1,6 @@
 Pod::Spec.new do |s|
-<<<<<<< HEAD
-  s.name         = "RSColorPicker"
-  s.version      = "0.9.0"
-=======
   s.name         = "RSColorPicker-Velosys"
   s.version      = "0.8.0"
->>>>>>> Changed pod to reference this repo
   s.summary      = "iPhone color picker view with brightness control, opacity control, and delegation support."
   s.description  = <<-DESC
                    iPhone color picker view with brightness control, opacity control, and delegation support.
